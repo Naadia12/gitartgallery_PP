@@ -9,5 +9,7 @@ public class artist {
         this.name = name;
 
     }
-
+public String getName() {
+        return.this.name;
+}
 }

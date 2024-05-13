@@ -10,4 +10,8 @@ public class ArtistTest {
        Artist = new artist("Naadia");
 
     }
+    @Test
+    public void getName(){
+       this.
+    }
 }
