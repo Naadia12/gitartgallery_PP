@@ -10,4 +10,15 @@ public class ArtWork {
         this.artist = artist;
         this.price = price;
     }
+
+    public String getTitle(){
+        return this.title;
+    }
+    public String getArtist(){
+        return this.artist;
+    }
+    public int getPrice(){
+        return this.price;
+
+    }
 }

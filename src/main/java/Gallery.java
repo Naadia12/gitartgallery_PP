@@ -18,4 +18,11 @@ public class Gallery {
         return this.name;
     }
 
+    public int getTill(){
+        return this.till;
+    }
+
+    public ArrayList<ArtWork> getArtWork(){
+        return this.artwork;
+    }
 }
