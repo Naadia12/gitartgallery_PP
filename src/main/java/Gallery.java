@@ -28,8 +28,28 @@ public class Gallery {
         return this.artwork;
     }
 
-    public void sellArtwork(Gallery gallery){
-        
+//    add to array list
+    public void addToList(ArtWork artwork){
+        this.artwork.add(artwork);
+    }
+
+//    remove from array list
+    public void removeFromList(ArtWork artwork){
+        this.artwork.remove(artwork);
+    }
+
+    public void sellArtwork(Customer customer, ArtWork artwork){
+        customer.buyArtwork(artwork);
+//        customer to buy artwork
+//        if the artwork is available, then remove that artwork from array list
+        if(this.artwork.contains(artwork)){
+            this.till += artwork.getPrice();
+            this.artwork.remove(artwork);
+        }
+//        set till to increase
+
+
+
     }
 
 }

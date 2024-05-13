@@ -11,13 +11,18 @@ public class Customer {
     }
 
     public String getName(){
+
         return this.name;
     }
 
     public int getWallet(){
+
         return this.wallet;
     }
 
+    public void buyArtwork(ArtWork artwork){
+        this.wallet -= artwork.getPrice();
+    }
 
 
 
