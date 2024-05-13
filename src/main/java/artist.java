@@ -5,7 +5,9 @@ public class artist {
     //constructors
 
     public artist (String name){
+
         this.name = name;
+
     }
 
 }

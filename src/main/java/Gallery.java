@@ -13,4 +13,5 @@ public class Gallery {
         this.artwork = new ArrayList<>();
 
     }
+
 }
