@@ -5,9 +5,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class GalleryTest {
 
-    @BeforeEach
-
     Gallery gallery;
+    @BeforeEach
 
     public void SetUp(){
 
@@ -15,4 +14,8 @@ public class GalleryTest {
 
     }
 
+    @Test
+    public void getName(){
+        assertThat(gallery.getName()).isEqualTo("Louvre");
+    }
 }

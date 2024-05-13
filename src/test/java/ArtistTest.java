@@ -1,17 +1,19 @@
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ArtistTest {
 
+    Artist artist;
+
     @BeforeEach
-    artist Artist;
-
-    public void SetUp(){
-
-       Artist = new artist("Naadia");
-
+    public void setUp(){
+        artist = new Artist("Leonardo Da Vinci");
     }
+
     @Test
-    public void getName(){
-       this.
+    public void nameOfArtist() {
+        assertThat(artist.getName()).isEqualTo("Leonardo Da Vinci");
     }
 }

@@ -4,7 +4,7 @@ public class Gallery {
 
     private String name;
     private int till;
-    private ArrayList<artWork> artwork;
+    private ArrayList<ArtWork> artwork;
 
     // constructors
     public Gallery(String name) {
@@ -12,6 +12,10 @@ public class Gallery {
         this.till = 0;
         this.artwork = new ArrayList<>();
 
+    }
+
+    public String getName(){
+        return this.name;
     }
 
 }
