@@ -15,6 +15,7 @@ public class Gallery {
     }
 
     public String getName(){
+
         return this.name;
     }
 
@@ -23,6 +24,12 @@ public class Gallery {
     }
 
     public ArrayList<ArtWork> getArtWork(){
+
         return this.artwork;
     }
+
+    public void sellArtwork(Gallery gallery){
+        
+    }
+
 }
